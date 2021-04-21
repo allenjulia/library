@@ -3,11 +3,10 @@ import axios from 'axios'
 import UpdateLibrary from './UpdateLibrary'
 
 
-//export default class Library extends Component {
+export default class Library extends Component {
   
-  //constructor(){
-    //super();
-export default function Library () {
+  constructor(){
+    super();
     let bookList = [{
       bookNumber : 1,
       title : 'Redwall',
@@ -36,14 +35,13 @@ export default function Library () {
       }
     }
   }
-
+  render () {
     return (
       <div>
         <h1>These are your books</h1>
-        <h2>{this.state.bookList}</h2>
         <UpdateLibrary/>
         <numberTheBook/>
       </div>  
     )
-  }  
+  } 
 }
