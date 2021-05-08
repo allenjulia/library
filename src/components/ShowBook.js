@@ -6,7 +6,7 @@ export default class ShowBook extends Component {
   getStyle = () => {
     return {
       backgroundColor: this.props.library.favorite ?
-      '#c4ff79' : '#333',
+      '#c4ff79' : '#d3d3d3',
       width: 200,
       textAlign: 'center',
       display: 'inline-block'
